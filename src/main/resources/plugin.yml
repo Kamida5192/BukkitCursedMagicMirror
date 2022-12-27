@@ -1,0 +1,15 @@
+name: Cursed Magic Mirror
+version: '${project.version}'
+main: com.github.kamida.cursedmagicmirror.CursedMagicMirror
+api-version: 1.19
+prefix: Cursed Magic Mirror
+authors: [ Kamida ]
+description: Magic Mirror home by gambling your life
+website: https://github.com/Kamida5192/BukkitCursedMagicMirror
+
+commands:
+  cmm:
+    aliases: cmm, cursedmagicmirror, cursedmm
+    permission: cursedmm.give
+    permission-message: You do not have permission cursedmm.give
+    description: Gives the user x1 cursed magic mirror
