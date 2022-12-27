@@ -7,7 +7,7 @@ This item will teleport you back to your bed or spawn. However, before teleporti
 Use /cmm to get a Cursed Magic Mirror
 requires permission cursedmm.give
 
-##Installation
+## Installation
 Built for Bukkit 1.19.X
 Drag and drop into plugins folder of your server. No options to configure.
 
