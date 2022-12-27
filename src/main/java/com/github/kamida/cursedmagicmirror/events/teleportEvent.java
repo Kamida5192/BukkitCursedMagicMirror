@@ -14,12 +14,17 @@ public class teleportEvent implements Listener {
     public static void onRightClick(PlayerInteractEvent event) {
         if ((event.getAction() == Action.RIGHT_CLICK_AIR )|| (event.getAction() ==  Action.RIGHT_CLICK_BLOCK)) {
             if (event.getItem() != null) {
-                if (event.getItem().getItemMeta().equals(itemManager.mirror)) {
+                if (event.getItem().getItemMeta().equals(itemManager.mirror.getItemMeta())) {
                     Player player = event.getPlayer();
 
-                    double damage = (int) (Math.random() * (0 - 20 + 1) + 0);
-                    player.sendMessage("The mirror took " + damage + " of health away.");
-                    player.damage(damage);
+                    double hp = (int) ((Math.random() * (0 - 20 + 1)) * -1);
+
+                    if (hp == 0.0) {
+                        player.sendMessage("Lucky, Mirror took no health away");
+                    } else {
+                        player.sendMessage("The mirror took " + hp + " of health away.");
+                    }
+                    player.damage(hp);
 
                     if (player.getBedSpawnLocation() != null) {
                         player.teleport(player.getBedSpawnLocation());

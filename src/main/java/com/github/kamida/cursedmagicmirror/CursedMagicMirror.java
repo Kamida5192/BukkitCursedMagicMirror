@@ -21,7 +21,7 @@ public final class CursedMagicMirror extends JavaPlugin {
     @Override
     public void onEnable() {
         itemManager.init();
-        getCommand("cursedmm").setExecutor(new commands());
+        getCommand("cmm").setExecutor(new commands());
         getServer().getPluginManager().registerEvents(new teleportEvent(), this);
     }
 

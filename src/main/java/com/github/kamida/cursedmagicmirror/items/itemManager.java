@@ -23,8 +23,9 @@ public class itemManager {
 
         /* Set Item Lore */
         List<String> lore = new ArrayList<>();
-        lore.add("Randomly damages user 0-20 health upon use");
-        lore.add("Yes, it can kill you");
+        lore.add("Randomly damages user");
+        lore.add("0-20 health upon use.");
+        lore.add("Yes, it can kill you.");
         meta.setLore(lore);
 
         /* Visual Aspects */
